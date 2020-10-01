@@ -228,7 +228,7 @@ class FloatObject(decimal.Decimal, PdfObject):
         try:
             return decimal.Decimal.__new__(cls, utils.str_(value), context)
         except:
-            return decimal.Decimal.__new__(cls, str(value))
+            return decimal.Decimal.__new__(cls, utils.str_(value))
 
     def __repr__(self):
         if self == self.to_integral():
