@@ -255,7 +255,7 @@ def str_(b):
         if type(b) == bytes:
             return b.decode('latin-1')
         else:
-            return b
+            return str(b)
 
 
 def ord_(b):
